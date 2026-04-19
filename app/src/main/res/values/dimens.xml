@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Отступы для телефонов -->
+    <dimen name="padding_extra_small">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_vertical_padding">4dp</dimen>
+    <dimen name="card_horizontal_padding">12dp</dimen>
+    <dimen name="card_icon_padding_end">12dp</dimen>
+
+    <dimen name="place_image_height">200dp</dimen>
+    <dimen name="place_image_padding_end">16dp</dimen>
+
+    <dimen name="drawer_item_padding">16dp</dimen>
+    <dimen name="screen_content_vertical_padding">8dp</dimen>
+    <dimen name="section_horizontal_padding">16dp</dimen>
+    <dimen name="section_vertical_padding">8dp</dimen>
+    <dimen name="height">200dp</dimen>
+    <dimen name="rounded">16dp</dimen>
+    <dimen name="mode_home_screen">120dp</dimen>
+
+    <dimen name="about_height_screen">16dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="verticalArr">8dp</dimen>
+    <dimen name="verticalArr12">12dp</dimen>
+    <dimen name="verticalArr16">16dp</dimen>
+    <dimen name="horizontalArr">16dp</dimen>
+    <dimen name="def_card">4dp</dimen>
+    <dimen name="mode_size">48dp</dimen>
+    <dimen name="categ_screen">40dp</dimen>
+    <dimen name="card_def_categ">2dp</dimen>
+    <dimen name="spacer_width">16dp</dimen>
+</resources>

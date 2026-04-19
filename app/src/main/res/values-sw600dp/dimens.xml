@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding_extra_small">6dp</dimen>
+    <dimen name="padding_small">12dp</dimen>
+    <dimen name="padding_medium">24dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
+
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="card_vertical_padding">8dp</dimen>
+    <dimen name="card_horizontal_padding">16dp</dimen>
+    <dimen name="card_icon_padding_end">16dp</dimen>
+
+    <dimen name="place_image_height">300dp</dimen>
+    <dimen name="place_image_padding_end">24dp</dimen>
+    <dimen name="height">350dp</dimen>
+    <dimen name="rounded">24dp</dimen>
+    <dimen name="mode_home_screen">180dp</dimen>
+
+    <dimen name="about_height_screen">24dp</dimen>
+    <dimen name="drawer_item_padding">20dp</dimen>
+    <dimen name="screen_content_vertical_padding">12dp</dimen>
+    <dimen name="section_horizontal_padding">24dp</dimen>
+    <dimen name="section_vertical_padding">12dp</dimen>
+</resources>
