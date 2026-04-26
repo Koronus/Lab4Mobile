@@ -10,10 +10,12 @@ import androidx.compose.ui.res.stringResource
 import com.example.town.R
 import com.example.town.model.Place
 import com.example.town.ui.components.Item
+import com.example.town.MainViewModel
 
 @Composable
 fun PlaceScreen(
     places: List<Place>,
+    viewModel: MainViewModel,
     onClick: (Place) -> Unit
 ) {
     LazyColumn(
@@ -25,7 +27,10 @@ fun PlaceScreen(
                 icon = painterResource(place.iconId),
                 title = stringResource(place.name),
                 description = stringResource(place.description),
-                onClick = { onClick(place) }
+                onClick = {
+                    viewModel.selectPlace(place.id)
+                    onClick(place)
+                }
             )
         }
     }

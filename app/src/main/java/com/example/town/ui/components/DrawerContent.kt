@@ -18,7 +18,7 @@ import androidx.compose.ui.res.stringResource
 fun DrawerContent(
     currentCategory: Int,
     onCategoriesClick: () -> Unit,
-
+    onCategorySelected: (Int) -> Unit,
     onAboutClick: () -> Unit,
     onSettingsClick: () -> Unit,
     onCloseDrawer: () -> Unit
@@ -34,6 +34,8 @@ fun DrawerContent(
                 style = MaterialTheme.typography.titleLarge,
                 modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding))
             )
+
+
 
 
             NavigationDrawerItem(

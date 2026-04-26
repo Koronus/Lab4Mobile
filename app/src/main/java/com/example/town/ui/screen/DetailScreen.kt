@@ -19,14 +19,22 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.dimensionResource
 import com.example.town.R
+import com.example.town.MainViewModel
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DetailScreen(
     placeId: Int?,
+    viewModel: MainViewModel,
     onBack: () -> Unit
 ) {
-    val place = placeId?.let { PlaceData.getPlaceById(it) }
+    val savedPlaceId by viewModel.selectedPlaceId.collectAsState()
+
+    val actualPlaceId = placeId ?: savedPlaceId
+
+    val place = actualPlaceId?.let { PlaceData.getPlaceById(it) }
 
     Scaffold(
         topBar = {

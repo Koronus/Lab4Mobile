@@ -44,6 +44,13 @@ fun TownApp(
             onCategoriesClick = {
                 navController.navigate("categories")
             },
+            onCategorySelected = { categoryId ->
+                viewModel.selectCategory(categoryId)
+                navController.navigate("main/$categoryId") {
+                    popUpTo("home") { inclusive = false }
+                }
+            },
+
             onAboutClick = { navController.navigate("about") },
             onSettingsClick = { navController.navigate("settings") },
             onCloseDrawer = { scope.launch { drawerState.close() } }
@@ -76,6 +83,7 @@ fun TownApp(
             TownNavHost(
                 navController = navController,
                 startCategoryId = currentCategory,
+                viewModel = viewModel,
                 modifier = Modifier.padding(innerPadding)
             )
         }

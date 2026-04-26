@@ -7,11 +7,12 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.town.data.PlaceData
 import com.example.town.ui.screen.*
-
+import com.example.town.MainViewModel
 @Composable
 fun TownNavHost(
     navController: NavHostController,
     startCategoryId: Int,
+    viewModel: MainViewModel,
     modifier: Modifier = Modifier
 ) {
     NavHost(
@@ -40,6 +41,7 @@ fun TownNavHost(
 
             PlaceScreen(
                 places = places,
+                viewModel = viewModel,
                 onClick = { place ->
                     navController.navigate("detail/${place.id}")
                 }
@@ -51,6 +53,7 @@ fun TownNavHost(
             val placeId = backStackEntry.arguments?.getString("placeId")?.toIntOrNull()
             DetailScreen(
                 placeId = placeId,
+                viewModel = viewModel,
                 onBack = { navController.popBackStack() }
             )
         }
